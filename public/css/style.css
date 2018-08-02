@@ -1,2 +1,10 @@
-body {background: #000000; padding-top:80px;}
-h1 {font-size: 66px; color: #ffffff !important;}
+/*====== MAIN STYLE ======*/
+
+body {
+	background-image: url('/img/bg-home.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;
+}
+
+.jumbotron {    background-color: transparent;
+    border-radius: .3rem;
+    margin-top: 16%;
+}
