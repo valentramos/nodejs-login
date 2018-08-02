@@ -1,25 +1,33 @@
 <!-- views/index.ejs -->
 <!doctype html>
 <html>
-<head>
-	<title>Valent | Autenticación</title>
-    <!-- <link rel="icon" href="/img/icono.png" type="image/x-icon"/> -->
-    <link rel="icon" href="https://valentramos.com/wp-content/uploads/2017/08/icono.png" sizes="32x32">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- load bootstrap css -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <div class="container">
-        <div class="jumbotron text-center">
-            <img src="/img/logo.png">
-            <h3><span class="fa fa-lock"></span> Autenticación</h3>
+    <head>
+    	<title>Valent | Autenticación</title>
+        <!-- <link rel="icon" href="/img/icono.png" type="image/x-icon"/> -->
+        <link rel="icon" href="https://valentramos.com/wp-content/uploads/2017/08/icono.png" sizes="32x32">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- load bootstrap css -->
+    	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row home text-center">
 
-            <p>Login or Register with:</p>
+                <div class="col-md-12 center">
+                    <img src="/img/logo.png">
+                    <h2><span class="fa fa-lock"></span> Autenticación</h2>
+                </div>
 
-            <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
-            <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
+                <div class="col-md-12 center" style="margin-top: 80px">
+                    <p>- Inicia Sesión ó Regístrate -</p>
+                    <a href="/login" class="btn btn-primary"><span class="fa fa-sign-in"></span> Iniciar Sesión</a>
+                </div>
+                
+                <div class="col-md-12 center">
+                    <a href="/signup" class="btn btn-secondary"><span class="fa fa-user"></span> Registrarse</a>
+                </div>
+                    
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,10 +1,37 @@
 /*====== MAIN STYLE ======*/
-
 body {
-	background-image: url('/img/bg-home.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;
+	background-image: url('/img/bg-home.jpg'); background-repeat: no-repeat; background-size: cover; 
+	background-position: center center; background-attachment: fixed;
+	overflow: hidden; width: 100%; height: height; margin: 0; padding: 0; 
 }
 
-.jumbotron {    background-color: transparent;
-    border-radius: .3rem;
-    margin-top: 16%;
+.row {margin-top: 16%;}
+.home img {width: 360px;}
+.home h2 {color: #767676;}
+.home p {margin-bottom: 200px;}
+
+.home .btn-primary {
+	border-radius: 26px; margin-bottom: 40px; padding: 6px 40px; 
+	color: #ff2526; background-color: transparent; border:2px solid #ff2526; width: 260px;
+}
+.home .btn-secondary {
+	border-radius: 26px; margin-bottom: 40px; padding: 6px 40px; 
+	background-color: red; border-color: red; width: 260px;
+}
+
+form {width: 360px; margin: auto;}
+/*====== MOVIL STYLE ======*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.home {padding-top: 260px; padding-bottom: 280px;}
+	.home img {width: 100%;}
+	.home h2 {font-size: 60px; color: #767676;}
+	.home p {font-size: 30px; margin-bottom: 200px;}
+	.home .btn-primary {
+		font-size: 46px; border-radius: 56px; margin-bottom: 40px; padding: 16px 0px; 
+		color: #ff2526; background-color: transparent; border:4px solid #ff2526; width: 100%; 
+	}
+	.home .btn-secondary {
+		font-size: 46px; border-radius: 56px; margin-bottom: 40px; padding: 16px 0px; 
+		background-color: red; border-color: red; width: 100%;
+	}
 }
